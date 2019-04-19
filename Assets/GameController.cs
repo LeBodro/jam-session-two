@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class GameController : MonoBehaviour
     public float left;
     public float right;
     public float duration = 15;
+    public Text declaration;
 
     float width;
 
@@ -43,7 +45,7 @@ public class GameController : MonoBehaviour
                 winner = teaBags[i].name;
             }
         }
-        Debug.Log(string.Format("A winner is {0}!", winner));
+        declaration.text = string.Format("A winner is {0}!", winner);
         yield return new WaitForSeconds(3);
         SceneManager.LoadScene(0);
     }
