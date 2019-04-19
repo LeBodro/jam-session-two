@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public TeaBag[] teaBags;
+    public float left;
+    public float right;
+
+    float width;
+
     void Start()
     {
-        
+        width = right - left;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        foreach (TeaBag bag in teaBags)
+        {
+            float target = bag.advance * width + left;
+            bag.GoTo(target);
+        }
     }
 }
