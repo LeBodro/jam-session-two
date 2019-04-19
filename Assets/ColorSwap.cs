@@ -19,14 +19,13 @@ public class ColorSwap : MonoBehaviour
 
     float initialLerpTime = 0f;
 
-    Image bgImage;
+    public Camera bgCamera;
 
     // Start is called before the first frame update
     void Start()
     {
-        bgImage = GetComponent<Image>();
         InitializeColor();
-        bgImage.color = GetCurrentColor();
+        bgCamera.backgroundColor = GetCurrentColor();
         fromColor = GetCurrentColor();
 
         MakeFutureColor();
@@ -132,7 +131,7 @@ public class ColorSwap : MonoBehaviour
     void FixedUpdate()
     {
         float relativeTime = Time.time - initialLerpTime;
-        bgImage.color = Color.Lerp(fromColor, goalColor, relativeTime / lerpDuration);
+        bgCamera.backgroundColor = Color.Lerp(fromColor, goalColor, relativeTime / lerpDuration);
 
         if (relativeTime >= lerpDuration) {
             initialLerpTime = Time.time;

@@ -12,8 +12,12 @@ public class IntroCam : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A) && Input.GetKeyDown(KeyCode.K))
-        {
+        if (
+            Input.GetKeyDown(KeyCode.A) && 
+            Input.GetKeyDown(KeyCode.K) && 
+            Input.GetKeyDown(KeyCode.L) && 
+            Input.GetKeyDown(KeyCode.S)
+        ) {
             StartGame();
         }
     }
