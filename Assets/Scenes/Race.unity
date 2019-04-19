@@ -122,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 561448116}
   - component: {fileID: 561448115}
+  - component: {fileID: 561448117}
   m_Layer: 0
   m_Name: Earl Grey
   m_TagString: Untagged
@@ -191,6 +192,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &561448117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561448114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d21eb456ccc91846ab3a2c0ce183c8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  b1: 122
+  b2: 120
+  advance: 0
 --- !u!1 &686327949
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,6 +236,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc939498dc22bca46ac061a31276daab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  teaBags:
+  - {fileID: 561448117}
+  - {fileID: 1637296832}
+  left: -5.6
+  right: 5.6
 --- !u!4 &686327951
 Transform:
   m_ObjectHideFlags: 0
@@ -244,6 +265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1637296831}
   - component: {fileID: 1637296830}
+  - component: {fileID: 1637296832}
   m_Layer: 0
   m_Name: Green Tea
   m_TagString: Untagged
@@ -313,6 +335,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1637296832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637296829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d21eb456ccc91846ab3a2c0ce183c8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  b1: 110
+  b2: 109
+  advance: 0
 --- !u!1 &2043999999
 GameObject:
   m_ObjectHideFlags: 0
