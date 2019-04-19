@@ -135,6 +135,9 @@ public class ColorSwap : MonoBehaviour
 
         if (relativeTime >= lerpDuration) {
             initialLerpTime = Time.time;
+            currentBlue = futureBlue;
+            currentRed = futureRed;
+            currentGreen = futureGreen;
             fromColor = goalColor;
             MakeFutureColor();
             goalColor = GetFutureColor();
