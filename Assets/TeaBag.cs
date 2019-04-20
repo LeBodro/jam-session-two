@@ -9,6 +9,8 @@ public class TeaBag : MonoBehaviour
     public KeyCode b1;
     public KeyCode b2;
     public float advance;
+    new public AudioSource audio;
+    public AudioClip stumble;
 
     KeyCode good;
     KeyCode bad;
@@ -37,12 +39,14 @@ public class TeaBag : MonoBehaviour
     {
         advance += 0.02f;
         advance = Mathf.Min(1, advance);
+        audio.Play();
         SwapButtons();
     }
 
     void Stumble()
     {
         advance *= STUMBLING;
+        audio.PlayOneShot(stumble);
     }
 
     void SwapButtons()
