@@ -17,6 +17,7 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
+        ended = false;
         width = right - left;
     }
 
