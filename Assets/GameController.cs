@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour
     public float right;
     public float duration = 15;
     public Text declaration;
+    public AudioSource tada;
 
     bool ended;
     float width;
@@ -47,7 +48,9 @@ public class GameController : MonoBehaviour
                 score = teaBags[i].advance;
                 winner = i;
             }
+            teaBags[i].enabled = false;
         }
+        tada.Play();
         declaration.text = string.Format("A winner is {0}!", teaBags[winner].name);
         teaBags[winner].GetComponent<Animation>().Play();
         yield return new WaitForSeconds(5);
