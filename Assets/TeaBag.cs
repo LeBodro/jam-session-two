@@ -11,7 +11,9 @@ public class TeaBag : MonoBehaviour
     public float advance;
     new public AudioSource audio;
     public AudioClip stumble;
+    public ParticleSystem spooner;
 
+    ParticleSystem.EmissionModule emission;
     KeyCode good;
     KeyCode bad;
     float tilt = 15;
@@ -21,6 +23,7 @@ public class TeaBag : MonoBehaviour
     {
         good = b1;
         bad = b2;
+        emission = spooner.emission;
     }
 
     void Update()
@@ -33,6 +36,8 @@ public class TeaBag : MonoBehaviour
 
         advance -= advance * DECAY * Time.deltaTime;
         MoveTowardTarget();
+
+        emission.rateOverTimeMultiplier = advance * 50;
     }
 
     void Progress()
