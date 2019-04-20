@@ -38,18 +38,18 @@ public class GameController : MonoBehaviour
 
     IEnumerator EndGame()
     {
-        string winner = string.Empty;
+        int winner = 0;
         float score = 0;
         for (int i = 0; i < teaBags.Length; i++)
         {
             if (teaBags[i].advance > score)
             {
                 score = teaBags[i].advance;
-                winner = teaBags[i].name;
-                teaBags[i].GetComponent<Animation>().Play();
+                winner = i;
             }
         }
-        declaration.text = string.Format("A winner is {0}!", winner);
+        declaration.text = string.Format("A winner is {0}!", teaBags[winner].name);
+        teaBags[winner].GetComponent<Animation>().Play();
         yield return new WaitForSeconds(3);
         SceneManager.LoadScene(0);
     }
