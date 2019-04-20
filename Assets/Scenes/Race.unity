@@ -1247,7 +1247,7 @@ ParticleSystem:
           m_PostInfinity: 2
           m_RotationOrder: 4
   EmissionModule:
-    enabled: 1
+    enabled: 0
     serializedVersion: 4
     rateOverTime:
       serializedVersion: 2
@@ -5087,7 +5087,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: f30cbf30bbdc84499a1018ce0b54eb2c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 1.33
   Loop: 1
   Mute: 0
   Spatialize: 0
@@ -10935,7 +10935,7 @@ ParticleSystem:
           m_PostInfinity: 2
           m_RotationOrder: 4
   EmissionModule:
-    enabled: 1
+    enabled: 0
     serializedVersion: 4
     rateOverTime:
       serializedVersion: 2

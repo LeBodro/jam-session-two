@@ -37,7 +37,7 @@ public class TeaBag : MonoBehaviour
         advance -= advance * DECAY * Time.deltaTime;
         MoveTowardTarget();
 
-        emission.rateOverTimeMultiplier = advance * 50;
+        //emission.rateOverTimeMultiplier = advance * 50;
     }
 
     void Progress()
@@ -45,6 +45,7 @@ public class TeaBag : MonoBehaviour
         advance += 0.02f;
         advance = Mathf.Min(1, advance);
         audio.Play();
+        spooner.Emit((int)(15 * advance));
         SwapButtons();
     }
 

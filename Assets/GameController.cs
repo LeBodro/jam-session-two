@@ -50,7 +50,7 @@ public class GameController : MonoBehaviour
         }
         declaration.text = string.Format("A winner is {0}!", teaBags[winner].name);
         teaBags[winner].GetComponent<Animation>().Play();
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(5);
         SceneManager.LoadScene(0);
     }
 }
