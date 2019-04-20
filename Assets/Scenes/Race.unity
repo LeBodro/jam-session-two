@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 561448116}
   - component: {fileID: 561448115}
   - component: {fileID: 561448117}
+  - component: {fileID: 561448118}
   m_Layer: 0
   m_Name: Earl Grey
   m_TagString: Untagged
@@ -207,6 +208,23 @@ MonoBehaviour:
   b1: 97
   b2: 115
   advance: 0
+--- !u!111 &561448118
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561448114}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 6924e8f91f1cbc44f9d3afe6975d1b2a, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: e51a2a446343e2d40b844364be20f581, type: 2}
+  - {fileID: 7400000, guid: 6924e8f91f1cbc44f9d3afe6975d1b2a, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &686327949
 GameObject:
   m_ObjectHideFlags: 0
@@ -5210,6 +5228,7 @@ GameObject:
   - component: {fileID: 1637296831}
   - component: {fileID: 1637296830}
   - component: {fileID: 1637296832}
+  - component: {fileID: 1637296833}
   m_Layer: 0
   m_Name: Green Tea
   m_TagString: Untagged
@@ -5294,6 +5313,23 @@ MonoBehaviour:
   b1: 107
   b2: 108
   advance: 0
+--- !u!111 &1637296833
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637296829}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 6924e8f91f1cbc44f9d3afe6975d1b2a, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: e51a2a446343e2d40b844364be20f581, type: 2}
+  - {fileID: 7400000, guid: 6924e8f91f1cbc44f9d3afe6975d1b2a, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1769791630
 GameObject:
   m_ObjectHideFlags: 0

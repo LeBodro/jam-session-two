@@ -46,6 +46,7 @@ public class GameController : MonoBehaviour
             {
                 score = teaBags[i].advance;
                 winner = teaBags[i].name;
+                teaBags[i].GetComponent<Animation>().Play();
             }
         }
         declaration.text = string.Format("A winner is {0}!", winner);
