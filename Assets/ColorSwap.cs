@@ -88,14 +88,26 @@ public class ColorSwap : MonoBehaviour
                 }
                 break;
             case 2:
-                if (!currentRed) {
-                    futureRed = true;
-                }
-                if (!currentGreen) {
-                    futureGreen = true;
-                }
-                if (!currentBlue) {
-                    futureBlue = true;
+                int randomColorToTurnOff = Random.Range(1, 3);
+                futureRed = currentRed;
+                futureBlue = currentBlue;
+                futureGreen = currentGreen;
+                switch (randomColorToTurnOff)
+                {
+                    case 1:
+                        if (currentRed) {
+                            futureRed = false;
+                        } else if(currentGreen) {
+                            futureGreen = false;
+                        }
+                        break;
+                    case 2:
+                        if (currentGreen) {
+                            futureGreen = false;
+                        } else if(currentBlue) {
+                            futureBlue = false;
+                        }
+                        break;
                 }
                 break;
         }
