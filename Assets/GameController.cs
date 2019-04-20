@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
     public float duration = 15;
     public Text declaration;
 
+    bool ended;
     float width;
 
     void Start()
@@ -27,8 +28,9 @@ public class GameController : MonoBehaviour
             bag.GoTo(target);
         }
         duration -= Time.deltaTime;
-        if (duration <= 0)
+        if (duration <= 0 && !ended)
         {
+            ended = true;
             StartCoroutine(EndGame());
         }
     }
